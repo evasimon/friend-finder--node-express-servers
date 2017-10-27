@@ -9,4 +9,4 @@ The app is built with `node.js` and `express.js` was used to handle routing.
 
 ### Good Luck!
 
-(Let's find you a friend!)[https://evas-friend-finder.herokuapp.com]
+[Let's find you a friend!](https://evas-friend-finder.herokuapp.com)
