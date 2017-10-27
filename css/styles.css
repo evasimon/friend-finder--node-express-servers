@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+}
+
+body, 
+a {
+    color: #525355;
+    font-family: sans-serif;
+}
+
+h1,
+.modal-title {
+    font-family: serif; 
+    font-size: 40px;
+    font-weight: bolder;   
+}
+
+h2 {
+    font-size:20px;
+}
+
+h3 {
+    margin-top: 24px;
+}
+
+img {
+    max-height: 300px;
+}
+
+.jumbotron hr,
+.top hr {
+    width: 60%;
+    border-top-color: #525355;
+}
+
+.container .jumbotron,
+.modal-content {
+    background-color: #c7d8ca;
+    color: #525355;
+}
+
+.survey_btn button{
+    background-color: #525355;
+    border-color: #e9edf1;
+    color: #e9edf1;
+}
+
+.survey_btn button:hover{
+    background-color: #242a35;
+    border-color: #2a2b2c;
+    color: #e9edf1;
+}
+
+.container.survey {
+    background-color: #c7d8ca;    
+}

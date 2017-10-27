@@ -1,6 +1,369 @@
-<html>
-    <head></head>
-    <body>
-        <h1>Hello Survey!</h1>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Friend Finder</title>
+
+    <!-- CSS Boostrap CDN Link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+    <!-- jquery and bootstrap js -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="container survey">
+        <div class="top text-center text-sm-left">
+            <h1>
+                <i class="fa fa-commenting" aria-hidden="true"></i> Friend Finder
+            </h1>
+            <hr>
+            <h2>Let's Find you a Friend!</h2>
+            <p>Answer a few basic questions and find the friend with the greatest compatibility!</p>
+        </div>
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q1" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q1" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q1" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q1" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q1" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q2" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q2" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q2" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q2" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q2" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q3" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q3" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q3" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q3" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q3" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q4" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q4" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q4" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q4" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q4" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>People can rarely upset you.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q5" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q5" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q5" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q5" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q5" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q6" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q6" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q6" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q6" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q6" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q7" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q7" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q7" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q7" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q7" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q8" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q8" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q8" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q8" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q8" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q9" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q9" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q9" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q9" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q9" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <div class="chosen-select">
+            <label class="radio-inline">
+                <input type="radio" name="q10" value="1" required>1 (Strongly Disagree)
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q10" value="2" required>2
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q10" value="3" required>3
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q10" value="4" required>4
+            </label>
+            <label class="radio-inline">
+                <input type="radio" name="q10" value="5" required>5 (Strongly Agree)
+            </label>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <div class="survey_btn">
+            <button type="submit" class="btn btn-lg btn-block " id="submit">
+                <i class="fa fa-check-circle" aria-hidden="true"></i>
+                Submit</button>
+        </div>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/evasimon/friend-finder--node-express-servers" target="_blank">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="resultsModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center text-sm-left">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                </div>
+                <div class="modal-body text-center text-sm-left">
+                    <h2 id="matchName"></h2>
+                    <img id="matchPhoto" class="img-thumbnail" src="" alt="Profile Photo Goes Here... Smile :)">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+
+        // captures the form inputs 
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // form validation
+            function validateForm() {
+                var isValid = true;
+                $('.form-control').each(function () {
+                    if ($(this).val() === '')
+                        isValid = false;
+                });
+
+                return isValid;
+            }
+
+            // selects all the checked radio buttons values
+            // add it to the scores array
+            var scores = [];
+            $(".chosen-select input[type=radio]:checked").each(function () {
+                scores.push(parseInt($(this).val()));
+            })
+
+            // if all required fields are filled and
+            // all questions are answered
+            if (validateForm() == true && scores.length === 10) {
+
+                // creates an object for the user's data
+                var userInput = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: scores
+                }
+
+                // calls AJAX post method the data to the friends API. 
+                $.post("/api/friends", userInput, function (data) {
+                    // grabs the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#matchName").text(data.name);
+                    $('#matchPhoto').attr("src", data.photo);
+
+                    // shows the modal with the best match 
+                    $("#resultsModal").modal('toggle');
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+            return false;
+        });
+
+    </script>
+</body>
+
 </html>

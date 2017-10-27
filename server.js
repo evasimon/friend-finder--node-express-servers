@@ -1,20 +1,26 @@
+// dependencies
 var htmlRoutes = require('./app/routing/htmlRoutes')
 var apiRoutes = require('./app/routing/apiRoutes')
 var express = require('express');
 var bodyParser = require('body-parser');
+var path = require('path');
 
-// Sets up the Express App
+// sets up the Express App
 var app = express();
-var PORT = 8080;
+var PORT = process.env.PORT || 8080;
 
-// Sets up the Express app to handle data parsing
-app.use(bodyParser.urlencoded({ extended: false }));
+// sets up the Express app to handle data parsing
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-// invoke the exported function to set up routes on our app
-htmlRoutes(app);
+// serves static files from the css folder
+app.use('/css', express.static(path.join(__dirname + '/css')));
+
+// invokes the exported function to set up routes on our app
+htmlRoutes(app, path);
 apiRoutes(app);
 
-app.listen(PORT, function() {
+// listenes on port
+app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
